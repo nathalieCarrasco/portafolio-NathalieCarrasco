@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:wght@300;400;700;900&display=swap');
+
+/* Resert de pagina general  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+ 
+}
+
+/* mis variables  */
+:root{
+    --font-family-1:'Kalam', cursive;
+    --font-family-2:'Lato', sans-serif;
+
+    --bold-font: 700;
+    --bolder-font: 900;
+    --light-font:300;
+    --normal-font:400
+
+
+    --primary-color: #a78976;
+    --secondary-color: #f0c48e;
+    --tree-color:#E2cdcc;
+    --for-color:#d5cdcc;
+    --bg-color:#000706;
+    --primary-color: #a78976;
+    --nude-color:#A78976;
+    --palorosa-color:#D4B2A7;
+}
+/* Fin variables */
+
+/* .material-symbols-outlined {
+ fill: azure;
+} */
+
+/* banner html 2  */
+
+.banner-box{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/portada-nathalie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box{
+   
+    margin-top: 20em;
+
+  
+}
+
+.button-box button{
+    
+    width: 7em;
+    height: 3em;
+    color: var(--for-color);
+    background-color: var(--primary-color);
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+.button-box button a:hover{
+    color: var(--bg-color) !important;
+    background-color: var(--secondary-color);
+}
+
+.button-box button a{
+    color: var(--for-color) !important;
+    background-color: var(--primary-color) ;
+    text-decoration: none;
+}
+
+/*PORTADA INTERNA ESTILOS */
+.mainContenedor{
+    background-color:  var(--bg-color);
+    height: min-content;
+    width: 100%;
+}
+
+.mainCentral{
+    background-color:  var(--bg-color);
+    height: min-content;
+    width: 100%;
+    padding-top: 45px;
+    display: flex;
+}
+
+
+.contenedor-ilus{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 5em;
+}
+.img-ilus{
+  
+    height: 80vh;
+    width: 80%;
+}
+
+.text-1{
+    color: var(--tree-color) ;
+   font-family: var(--font-family-1);
+   font-weight: 700;
+   font-size: 56px;
+   margin-top: 1em;
+}
+   .text-1-2{
+        color: var(--nude-color);
+        font-family: var(--font-family-1);
+        font-weight: 500;
+        font-size: 76px;
+
+    }
+
+    .text-1-3{
+        color: var(--palorosa-color);
+        font-weight: 300;
+    }
+
+    .parrafo{
+        font-family: var(--font-family-2);
+        font-weight: 300;
+        color: var(--for-color) !important;
+        font-size: 1.2em !important;
+        
+    }
+
+    .container-botones{
+        margin-top: 3em!important;
+    }
+
+    .container-botones .bton{
+        color: var(--for-color);
+        background-color:var(--primary-color);
+    }
+
+    .bton:hover{
+        color: var(--bg-color) !important;
+        background-color:var(--secondary-color) !important;
+    }
+
+
+    /* Scroll to top button */
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+     border-radius: 9em;
+    
+  }
+
+
+.span-text{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid ;
+    width: 29 ch;
+
+    animation:  typing 4s steps(29) 1s 1 normal both, blink 1s steps(1) infinite;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from{width: 0;}
+    to {
+width: 100%;
+}
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+
+.parrafo{
+    margin-top: 30px;
+    color:rgba(240, 248, 255, 0.788);
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+
+.container-botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.bton{
+    width: 130px;
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+.bton-1{
+        background-color: #A38F85;
+    }
+
+    .bton-2{
+        background-color: transparent;
+        border: 2px solid #A38F85;
+    }
+
+/*Navbar Estilos*/
+.navbar{
+    background-color: var(--bg-color);
+
+}
+.navbar-collapse{
+    justify-content: end;
+}
+
+.barra a{
+    color: var(--primary-color);
+    font-size: var(--normal-font);
+    font-family: var(--font-family-2);
+    font-size: 1.5em;
+}
+a:hover{
+    color: var(--secondary-color) !important;
+    padding: 0px 12px;
+}
+
+.navbar-toggler{
+    color: var(--primary-color);
+}
+
+/* seccion 1 sobre mi */
+.sobreMi{
+    background-color: var(--bg-color);
+}
+.contenedorTexto{
+    color: var(--for-color);
+    padding-top: 150px;
+}
+
+.contenedorTexto h2{
+    color: var(--primary-color);
+    font-family: var(--font-family-1);
+    font-weight: var(--bold-font);
+    font-size: 3em;
+}
+
+.contenedorTexto p{
+    font-family: var(--font-family-2);
+font-weight: var(--light-font);
+    font-size: 1.5em;
+}
+.contenedorImg{
+    display:flex;
+    height: 90vh;
+    object-fit: contain;
+}
+
+.contenedorImg img{
+ width: 80%;
+ height: auto;
+}
+.navbar-toggler-icon{
+    fill: var(--primary-color) !important;
+}
+
+/* HABILIDADES*/
+
+.habilidades_box{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.box-sec{
+    padding-top: 6em;
+    justify-content: center;
+}
+.text-habilidades{
+
+    color: var(--nude-color) !important;
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.card{
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    border-radius: 3em !important;
+    background-color: transparent !important;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/*FIIN HABILIDADES */
+/*INICIO PROYECTOS */
+.proyectos-box{
+    width: 100%;
+    height: max-content;
+    background-color: var(--bg-color);
+}
+
+.box-xl h2{
+  font-family: var(--font-family-1);
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--primary-color);
+  margin-top: 2em;
+}
+
+.tarjeta-proyectos{
+    border: solid 0.2em var(--primary-color) !important;
+    color: var(--for-color);
+    /* //height: 25em; */
+    min-width: 380 px;
+    max-width: max-content;
+}
+
+.img-im{
+    width: 100% !important;
+    border-radius: 4em !important;
+    display: contents;
+    height: 250px !important;
+
+}
+
+
+
+
+
+/* TAMAÑO PARA MOVIL */
+@media screen and (max-width: 720px) {
+    .contenedorImg{
+        display:flex;
+        height: 350px;
+        object-fit: contain;
+    }
+    .contenedorImg img{
+        width: 80%;
+        height:auto;
+    }
+
+    .contenedorTexto{
+        padding-top: 50px;
+    }
+
+    .contenedorTexto p{
+
+        font-size: 1em;
+    }
+
+    .banner-box{
+        width: 100%;
+        height: 100vh;
+        background-image: url(/assets/img/celularbox.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/*portada interna*/
+
+.contenedor-ilus{
+    height: 450px;
+    width: 100%;
+}
+    .img-ilus{
+        height: 300px;
+        width: 80%;
+    }
+
+    .text-1{
+        color: var(--tree-color) ;
+        font-family: var(--font-family-1);
+        font-weight: 700;
+        font-size: 3em;
+        margin-top: 0;
+    }
+
+    .text-1-2{
+            color: #A78976;
+            font-family: var(--font-family-1);
+            font-weight: 500;
+            font-size: 2em;
+    
+        }
+        .text-1-3{
+            color: #D4B2A7;
+            font-weight: 200;
+        }
+
+        .parrafo{
+        
+            font-size: 1em !important;
+            padding: 0px 1em!important;
+            
+        }
+}
