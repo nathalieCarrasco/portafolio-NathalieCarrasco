@@ -346,6 +346,17 @@ font-weight: var(--light-font);
 
 }
 
+.btn-sm{
+    background-color: var(--nude-color) !important;
+    border: solid 0.2em var(--palorosa-color) !important;
+}
+
+.btn-sm:hover{
+    background-color: var(--secondary-color) !important;
+    border: solid 0.2em var(--palorosa-color) !important;
+    color: var(--bg-color) !important;
+}
+
 
 
 
