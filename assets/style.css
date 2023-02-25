@@ -429,3 +429,49 @@ font-weight: var(--light-font);
             
         }
 }
+
+/* 404 pagina estilos */
+
+.contenedor-principal{
+    width: 100%;
+    height: 100vh;
+    background-color: #a78976;
+    background-image: url(/assets/img/404.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000706;
+  
+}
+
+.contenedor-btns button{
+    margin-top:83vh;
+    padding: 1rem;
+    background-color:var(--primary-color) ;
+    color: var(--bg-color);
+    font-family: var(--font-family-1);
+
+}
+
+.contenedor-btns button:hover{
+
+    background-color:var(--palorosa-color) ;
+    font-family: var(--font-family-1);
+
+}
+
+button a{
+    color: var(--bg-color) !important;
+    font-size: large;
+    text-decoration: none !important;
+    }
+button a:hover{
+color: var(--bg-color) !important;
+font-size: large;
+}
